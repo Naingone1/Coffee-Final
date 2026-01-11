@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beans Coffee – Coffee Selection</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+</head>
+<body>
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="header-inner">
+      <div class="header-left">
+        <div class="logo-mark">
+          <img src="Image/2586-logo-1713637013.642color-003932.svg">
+        </div>
+        <h1 class="header-text">Beans</h1>
+      </div>
+
+      <div class="header-center">
+        <ul class="nav-link">
+          <li><a href="Index.html">Home</a></li>
+          <li><a class="active" href="coffeeselection.html">Coffee</a></li>
+          <li><a href="Brewing.html">Brewing</a></li>
+          <li><a href="Events.html">Events</a></li>
+          <li><a href="Specialoffer.html">Offers</a></li>
+        </ul>
+      </div>
+
+      <div class="header-right">
+        <a href="cart.html" class="cart-link">
+          <img src="Image/shopping-cart-svgrepo-com.svg" alt="Cart" class="shoppingcart">
+          <span class="cart-count">0</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- === SEARCH BAR SECTION === -->
+<div class="search-wrapper">
+  <input 
+    type="text" 
+    id="product-search" 
+    placeholder="Search coffee…" 
+    oninput="filterProducts()"
+  >
+  <p id="search-animation-text"></p>
+</div>
+
+
+  <div class="wrapper">
+    <section class="section reveal">
+      <div class="section-heading">
+        <h2>Espresso & Milk</h2>
+        <span>Choose your favourite, customise at the counter</span>
+      </div>
+
+      <div class="card-grid">
+        <article class="card">
+          <img src="Image/Double Espresso.webp" alt="Double Espresso">
+          <h3 class="card-title">Double Espresso</h3>
+          <p class="card-meta">Bright and rich, pulled as a double shot.</p>
+          <div class="card-footer">
+            <span class="price">฿70</span>
+            <button class="btn-pill add-to-cart" data-name="Double Espresso" data-price="70">
+              Add to cart
+            </button>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="Image/Cappuccino.webp" alt="Cappuccino">
+          <h3 class="card-title">Cappuccino</h3>
+          <p class="card-meta">Foamy and balanced, topped with cocoa.</p>
+          <div class="card-footer">
+            <span class="price">฿90</span>
+            <button class="btn-pill add-to-cart" data-name="Cappuccino" data-price="90">
+              Add to cart
+            </button>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="Image/flat white.webp" alt="Flat White">
+          <h3 class="card-title">Flat White</h3>
+          <p class="card-meta">Smooth microfoam and a double shot of espresso.</p>
+          <div class="card-footer">
+            <span class="price">฿95</span>
+            <button class="btn-pill add-to-cart" data-name="Flat White" data-price="95">
+              Add to cart
+            </button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section reveal">
+      <div class="section-heading">
+        <h2>Cold & Signature</h2>
+        <span>Perfect for Bangkok afternoons</span>
+      </div>
+
+      <div class="card-grid">
+        <article class="card">
+          <img src="Image/Classic Cold Brew.jpg" alt="Classic Cold Brew">
+          <h3 class="card-title">Classic Cold Brew</h3>
+          <p class="card-meta">Smooth and low-acid, steeped for 16 hours.</p>
+          <div class="card-footer">
+            <span class="price">฿100</span>
+            <button class="btn-pill add-to-cart" data-name="Classic Cold Brew" data-price="100">
+              Add to cart
+            </button>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="Image/Mocha Frappe.avif" alt="Mocha Frappe">
+          <h3 class="card-title">Mocha Frappe</h3>
+          <p class="card-meta">Blended ice mocha with whipped cream.</p>
+          <div class="card-footer">
+            <span class="price">฿115</span>
+            <button class="btn-pill add-to-cart" data-name="Mocha Frappe" data-price="115">
+              Add to cart
+            </button>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="Image/Oat Caramel Latte.webp" alt="Oat Caramel Latte">
+          <h3 class="card-title">Oat Caramel Latte</h3>
+          <p class="card-meta">Oat milk, caramel drizzle, double espresso.</p>
+          <div class="card-footer">
+            <span class="price">฿120</span>
+            <button class="btn-pill add-to-cart" data-name="Oat Caramel Latte" data-price="120">
+              Add to cart
+            </button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <span>Prices may change seasonally.</span>
+      <span>Non-dairy options available.</span>
+    </footer>
+  </div>
+ 
+
+
+  
+<!-- Floating cart -->
+  <div class="floating-cart" id="floatingCart">
+    <a href="cart.html" class="floating-cart-link">
+      <img src="Image/shopping-cart-svgrepo-com.svg" alt="Cart" class="floating-cart-icon">
+      <span class="cart-count floating-cart-count">0</span>
+    </a>
+  </div>
+
+  <script src="Script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    once: true,          // animate only once when in view
+    offset: 100,         // trigger point
+  });
+</script>
+
+</body>
+</html>

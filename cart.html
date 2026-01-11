@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beans Coffee – Cart</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="header-inner">
+      <div class="header-left">
+        <div class="logo-mark">
+          <img src="Image/2586-logo-1713637013.642color-003932.svg" alt="Beans logo">
+        </div>
+        <h1 class="header-text">Beans</h1>
+      </div>
+
+      <div class="header-center">
+        <ul class="nav-link">
+          <li><a href="Index.html">Home</a></li>
+          <li><a href="coffeeselection.html">Coffee</a></li>
+          <li><a href="Brewing.html">Brewing</a></li>
+          <li><a href="Events.html">Events</a></li>
+          <li><a href="Specialoffer.html">Offers</a></li>
+        </ul>
+      </div>
+
+      <div class="header-right">
+        <a href="cart.html" class="cart-link">
+          <img src="Image/shopping-cart-svgrepo-com.svg" alt="Cart" class="shoppingcart">
+          <span class="cart-count">0</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrapper">
+    <!-- CART SUMMARY -->
+    <section class="cart-container reveal">
+      <h1>Your Cart</h1>
+      <p class="cart-empty">Your cart is empty. Add some drinks from the menu!</p>
+
+      <div class="cart-items"></div>
+
+      <div class="cart-summary">
+        <span>Total:</span>
+        <span>฿<span id="cart-total">0.00</span></span>
+      </div>
+    </section>
+
+    <!-- BILLING + PAYMENT CARD -->
+    <section class="billing-section">
+      <h2>Billing &amp; Payment</h2>
+
+      <form class="billing-form" action="#" method="post">
+        <!-- Billing -->
+        <div class="billing-row">
+          <label for="fullName">Full Name</label>
+          <input type="text" id="fullName" name="fullName" placeholder="John M. Doe">
+        </div>
+
+        <div class="billing-row">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="john@example.com">
+        </div>
+
+        <div class="billing-row">
+          <label for="address">Address</label>
+          <input type="text" id="address" name="address" placeholder="73rd Street">
+        </div>
+
+        <hr>
+
+        <!-- Payment -->
+        <h3>Payment Information</h3>
+
+        <div class="form-group">
+          <label for="cardname">Name on Card</label>
+          <input type="text" id="cardname" name="cardname" placeholder="John More Doe" required>
+        </div>
+
+        <div class="form-group">
+          <label for="cardnumber">Credit Card Number</label>
+          <input type="text" id="cardnumber" name="cardnumber" placeholder="1111-2222-3333-4444" required>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="expmonth">Expiration Month</label>
+            <input type="text" id="expmonth" name="expmonth" placeholder="December" required>
+          </div>
+
+          <div class="form-group">
+            <label for="expyear">Expiration Year</label>
+            <input type="text" id="expyear" name="expyear" placeholder="2026" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>
+            <input type="checkbox" name="sameaddress" checked>
+            Shipping address same as billing
+          </label>
+        </div>
+
+        <button type="submit" class="btn-primary checkout-btn">Proceed to Checkout</button>
+      </form>
+    </section>
+
+    <footer class="footer">
+      <span>Cart data is stored in your browser only (prototype).</span>
+      <span>Show this screen at the counter to order.</span>
+    </footer>
+  </div>
+
+  <!-- Floating cart (bottom-right) -->
+  <div class="floating-cart" id="floatingCart">
+    <a href="cart.html" class="floating-cart-link">
+      <img src="Image/shopping-cart-svgrepo-com.svg" alt="Cart" class="floating-cart-icon">
+      <span class="cart-count floating-cart-count">0</span>
+    </a>
+  </div>
+
+  <script src="Script.js"></script>
+</body>
+</html>

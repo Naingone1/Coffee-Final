@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beans Coffee – Brewing</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="header-inner">
+      <div class="header-left">
+        <div class="logo-mark">
+          <img src="Image/2586-logo-1713637013.642color-003932.svg">
+        </div>
+        <h1 class="header-text">Beans</h1>
+      </div>
+
+      <div class="header-center">
+        <ul class="nav-link">
+          <li><a href="Index.html">Home</a></li>
+          <li><a href="coffeeselection.html">Coffee</a></li>
+          <li><a class="active" href="Brewing.html">Brewing</a></li>
+          <li><a href="Events.html">Events</a></li>
+          <li><a href="Specialoffer.html">Offers</a></li>
+        </ul>
+      </div>
+
+      <div class="header-right">
+        <a href="cart.html" class="cart-link">
+          <img src="Image/shopping-cart-svgrepo-com.svg" alt="Cart" class="shoppingcart">
+          <span class="cart-count">0</span>
+        </a>
+      </div>
+    </div>
+    <!-- === SEARCH BAR SECTION === -->
+    <div class="search-wrapper">
+      <input type="text" id="product-search" placeholder="Search coffee…" oninput="filterProducts()">
+      <p id="search-animation-text"></p>
+    </div>
+  </div>
+
+
+
+  <div class="wrapper">
+    <section class="section reveal">
+      <div class="section-heading">
+        <h2>Brewing Guides</h2>
+        <span>Learn how to brew Beans coffee at home</span>
+      </div>
+
+      <div class="card-grid">
+        <article class="card">
+          <img src="Image/V60 Pour Over.webp" alt="V60 Pour Over">
+          <h3 class="card-title">V60 Pour Over</h3>
+
+          <p class="card-meta">
+            Medium-fine grind, 15g coffee to 250ml water, 2–3 minutes.
+          </p>
+          <div class="card-footer">
+            <span class="price">Recommended: Beans House Blend</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="Image/French Press.avif" alt="French Press">
+          <h3 class="card-title">French Press</h3>
+          <p class="card-meta">
+            Coarse grind, 20g coffee to 300ml water, steep for 4 minutes.
+          </p>
+          <div class="card-footer">
+            <span class="price">Recommended: Chocolatey Brazilian</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="Image/AeroPress.webp" alt="AeroPress">
+          <h3 class="card-title">AeroPress</h3>
+          <p class="card-meta">
+            Fine grind, inverted method, 14g coffee to 220ml water.
+          </p>
+          <div class="card-footer">
+            <span class="price">Recommended: Light Roast Ethiopian</span>
+          </div>
+        </article>
+        <article class="card">
+          <img src="Image/coffee grinder.jpeg" alt="Coffee Grinder">
+          <h3 class="card-title">Coffee Grinder</h3>
+
+          <p class="card-meta">
+            Match grind size to method: fine (espresso), medium (V60), coarse (French press).
+            Grind fresh for best flavour.
+          </p>
+          <div class="card-footer">
+            <span class="price">Recommended: Beans House Blend</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="Image/cold brew.jpg" alt="Cold Brew">
+          <h3 class="card-title">Cold Brew</h3>
+          <p class="card-meta">
+            Coarse grind, steep 12–18 hours in the fridge. Start ratio: 1:8 coffee to water,
+            then dilute to taste.
+          </p>
+          <div class="card-footer">
+            <span class="price">Recommended: Chocolatey Brazilian</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="Image/mocha pot.jpg" alt="Mocha Pot">
+          <h3 class="card-title">Moka Pot</h3>
+          <p class="card-meta">
+            Fill base to valve, medium-fine grind (not espresso-fine), brew on low heat.
+            Remove when it starts to sputter.
+          </p>
+          <div class="card-footer">
+            <span class="price">Recommended: Light Roast Ethiopian</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <span>All recipes are starting points – adjust to taste.</span>
+      <span>Visit our events page for hands-on brewing workshops.</span>
+    </footer>
+  </div>
+
+  <!-- Floating cart -->
+  <div class="floating-cart" id="floatingCart">
+    <a href="cart.html" class="floating-cart-link">
+      <img src="Image/shopping-cart-svgrepo-com.svg" alt="Cart" class="floating-cart-icon">
+      <span class="cart-count floating-cart-count">0</span>
+    </a>
+  </div>
+  <script src="Script.js"></script>
+</body>
+
+</html>

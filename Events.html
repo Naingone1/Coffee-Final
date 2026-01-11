@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beans Coffee – Events</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="header-inner">
+      <div class="header-left">
+        <div class="logo-mark">
+          <img src="Image/2586-logo-1713637013.642color-003932.svg" alt="Beans logo">
+        </div>
+        <h1 class="header-text">Beans</h1>
+      </div>
+
+      <div class="header-center">
+        <ul class="nav-link">
+          <li><a href="Index.html">Home</a></li>
+          <li><a href="coffeeselection.html">Coffee</a></li>
+          <li><a href="Brewing.html">Brewing</a></li>
+          <li><a class="active" href="Events.html">Events</a></li>
+          <li><a href="Specialoffer.html">Offers</a></li>
+        </ul>
+      </div>
+
+      <div class="header-right">
+        <a href="cart.html" class="cart-link">
+          <img src="Image/shopping-cart-svgrepo-com.svg" alt="Cart" class="shoppingcart">
+          <span class="cart-count">0</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrapper">
+
+    <h1 class="page-title">Upcoming Coffee Events</h1>
+    <p class="subtitle">Join us for workshops, tastings, and brewing classes!</p>
+
+    <div class="event-container">
+      <!-- Event 1 -->
+      <div class="event-card">
+        <img src="Image/coffee tasting.jpeg" alt="Coffee Tasting" class="event-img">
+        <h2>Coffee Tasting Workshop</h2>
+        <p class="event-date">📅 January 14, 2026</p>
+        <p class="event-desc">
+          Explore flavours from around the world. Learn about notes, aroma,
+          and the art of tasting specialty coffee.
+        </p>
+        <button class="event-btn" type="button">Reserve Spot</button>
+      </div>
+
+      <!-- Event 2 -->
+      <div class="event-card">
+        <img src="Image/lattee art.jpeg" alt="Latte Art" class="event-img">
+        <h2>Latte Art Masterclass</h2>
+        <p class="event-date">📅 February 3, 2026</p>
+        <p class="event-desc">
+          Learn techniques to pour hearts, rosettas, and tulips.
+          Beginner-friendly and fun.
+        </p>
+        <button class="event-btn" type="button">Reserve Spot</button>
+      </div>
+
+      <!-- Event 3 -->
+      <div class="event-card">
+        <img src="Image/brewing basic.jpeg" alt="Brewing Workshop" class="event-img">
+        <h2>Home Brewing Basics</h2>
+        <p class="event-date">📅 February 24, 2026</p>
+        <p class="event-desc">
+          A complete guide for beginners. Learn how to brew the perfect cup
+          using V60, French press, and espresso.
+        </p>
+        <button class="event-btn" type="button">Reserve Spot</button>
+      </div>
+    </div>
+
+    <!-- ===== REGISTER SECTION ===== -->
+    <section class="event-register-section reveal">
+      <div class="event-register-wrapper">
+
+        <!-- Left side: info -->
+        <div class="event-register-info">
+          <h2>Register for an Event</h2>
+          <p>
+            Choose your workshop and leave your details. We’ll send a confirmation
+            email with your reserved time.
+          </p>
+          <ul>
+            <li>Small groups – cosy, hands-on sessions</li>
+            <li>Free welcome drink on arrival</li>
+            <li>Pay at the counter on the day</li>
+          </ul>
+        </div>
+
+        <!-- Right side: card form -->
+        <div class="event-register-card">
+          <h3>Reserve your seat</h3>
+
+          <form class="event-form" action="mailto:Naingone@gmail.com" method="post" enctype="text/plain">
+            <label>
+              Select event
+              <select name="Event">
+                <option value="Coffee Tasting Workshop">Coffee Tasting Workshop</option>
+                <option value="Latte Art Masterclass">Latte Art Masterclass</option>
+                <option value="Home Brewing Basics">Home Brewing Basics</option>
+              </select>
+            </label>
+
+            <label>
+              First name
+              <input type="text" name="First Name" required>
+            </label>
+
+            <label>
+              Last name
+              <input type="text" name="Last Name" required>
+            </label>
+
+            <label>
+              Email
+              <input type="email" name="Email" required>
+            </label>
+
+            <label>
+              Notes (optional)
+              <textarea name="Notes" rows="2" placeholder="Any allergies or questions?"></textarea>
+            </label>
+
+            <button type="submit" class="btn-primary event-submit-btn">
+              Send Registration
+            </button>
+          </form>
+
+          <p class="event-register-note">
+            Workshops are held at Beans, Sathorn.<br>
+            Limited seats · Pre-booking recommended.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <footer class="footer">
+      <span>Workshops are held at Beans, Sathorn.</span>
+      <span>Limited seats · Pre-booking recommended.</span>
+    </footer>
+  </div>
+
+  <!-- Floating cart -->
+  <div class="floating-cart" id="floatingCart">
+    <a href="cart.html" class="floating-cart-link">
+      <img src="Image/shopping-cart-svgrepo-com.svg" alt="Cart" class="floating-cart-icon">
+      <span class="cart-count floating-cart-count">0</span>
+    </a>
+  </div>
+
+  <script src="Script.js"></script>
+</body>
+
+</html>
